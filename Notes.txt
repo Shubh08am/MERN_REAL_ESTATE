@@ -1,0 +1,63 @@
+(PART-1)
+set up reactjs and tailwind and create github repo
+
+-> use command -> npm create vite@latest client 
+-> Framework -> react 
+-> variant: » JavaScript + SWC
+-> client is the name of the folder
+
+-> To move from main folder[MERN_REAL_ESTATE] to client -> cd client 
+-> INSTALL node -> npm install 
+
+->Than install Tailwind CSS from -> https://tailwindcss.com/docs/guides/vite 
+-> Install this extension -> ES7+ React/Redux/React-Native snippets , Auto Rename Tag , 
+console-ninja , GitHub Copilot , GitHub Copilot Chat , Prettier - Code formatter, Tailwind CSS IntelliSense 
+
+-> Uploading to Github -> using git and command 
+
+
+
+(PART-2) 
+-> Its about creating routes in React 
+create pages and routes
+inside src folder create pages folder
+inside pages folder create pages about.jsx,Home.jsx,Signin.jsx,SignOut.jsx
+
+install react router dom in client folder for client side routing
+inside browser router specify routes and route and path and element for client side routing
+
+update to git using vs code without commands
+
+
+
+(PART-3)
+create header Component which is common for all pages
+src -> create folder -> components -> Header.jsx -> Header appears in all the pages than created in Part-2
+-> in header.jsx -> change tag to meaningfull name for seo purposes 
+-> than applying some css to Urban Estate name and Using FlexWrap 
+-> install npm i react-icon in client folder to add icon 
+-> adding responsiveness using tailwind css like first mobile version than desktop version css
+useNavigate() hook from react router dom is used for navigating to different pages
+
+
+-- 
+Now work on backend part of project and create sign in and sign out part of the pages and create api of routes 
+and intereact between client and backend
+
+(PART-4)
+create and run the server
+create folder api in mern real estate
+go to folder mern real estate and create package.json using npm init -y 
+npm install express in mern estate using npm install express
+->To run index.js use -> node api/index.js , be in mern real estate folder only and open from api index.js file 
+->Also, install -> npm i nodemon -> to help not to again start server -> any changes automatically reflected
+
+(PART-5)
+connect to db
+npm install mongoose in mern-estate
+npm install dotenv in mern-estate
+create .env file in mern-estate and add MONGO variable assigned to the connection string
+import the dotenv module in index.js
+dotenv.config()
+add .env file to .gitignore before commit
+
