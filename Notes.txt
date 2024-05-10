@@ -52,7 +52,9 @@ npm install express in mern estate using npm install express
 ->To run index.js use -> node api/index.js , be in mern real estate folder only and open from api index.js file 
 ->Also, install -> npm i nodemon -> to help not to again start server -> any changes automatically reflected
 
-(PART-5)
+
+(PART-5) 
+-> connect to database our server and using mongoose package to connect to our database
 connect to db
 npm install mongoose in mern-estate
 npm install dotenv in mern-estate
