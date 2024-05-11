@@ -64,6 +64,17 @@ dotenv.config()
 add .env file to .gitignore before commit this won't push .env file to github 
 ->connecting to db little bit complex see accordingly -> add ip address 0.0.0.0/0 
 
-(PART-6) 
+(PART-6) -> Create User Model 
 ->create first model for our database users which set some rules and conditions that can be added to our database
-->creating signup backend 
+-> Inside api folder -> create models -> than create schema here 
+
+(PART-7) -> Create a test API route
+-> Creating first api routes which is test api route 
+-> open api folder -> index.js -> create route 
+-> api folder -> create routes folder and controllers folder 
+-> created the route and tested its working -> using http://localhost:3000/api/user/test
+
+(PART-8)
+->creating signup api route
+->so that user can signup on our application
+
