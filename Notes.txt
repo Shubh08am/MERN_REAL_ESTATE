@@ -84,3 +84,8 @@ add .env file to .gitignore before commit this won't push .env file to github
 -> we don't want to save our password in database directly because if someone hacks database they get access to password or admin has access of password
 -> therefore hash it or encrypt for that in mern real estate folder download this package npm i bcryptjs
 -> controllers folders -> inside it 2 3 files 
+
+(PART-9) 
+->Creating a Middlewares and a function to handle possible erros 
+-> middlewares takes care of the errors 
+-> create inside api folders -> utils folder -> throw error like password not long enough -> this are custom error created by us 
