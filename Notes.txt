@@ -145,5 +145,14 @@ export const signin = async (req,res,next)=>{
 };
 
 
+(PART-13) 
+->complete sign in page functionality 
+->work on ui and connect it to database 
+-> have interactivity between frontend and the backend 
+-> remember I have used Signin.jsx file name not SignIn.jsx 
+->same as PART-12 
+->here, after signin navigate to home page 
+->if trying to signin with wrong mail -> user not found! message comes 
+->if trying to signin with wrong password -> wrong credentials! message comes 
 
 
