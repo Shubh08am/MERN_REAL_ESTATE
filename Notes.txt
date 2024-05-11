@@ -163,6 +163,9 @@ export const signin = async (req,res,next)=>{
 -> download rules from https://redux-toolkit.js.org/tutorials/quick-start 
 -> download redux dev tools and see action & states accordingly than 
 
+(PART-15)
+->Add Redux Persist 
+->adding data in local storage 
 
 
 
