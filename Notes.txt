@@ -88,4 +88,9 @@ add .env file to .gitignore before commit this won't push .env file to github
 (PART-9) 
 ->Creating a Middlewares and a function to handle possible erros 
 -> middlewares takes care of the errors 
--> create inside api folders -> utils folder -> throw error like password not long enough -> this are custom error created by us 
+-> create inside api folders -> utils folder -> throw error like password not long enough -> this are custom error created by us -> function name is errorHandler inside utils->error.js
+
+(PART-10) 
+->Creating UI of SIGN-UP PAGE 
+->inside client->src->pages->signup.jsx go there and create 
+
