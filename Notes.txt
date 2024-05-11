@@ -75,6 +75,12 @@ add .env file to .gitignore before commit this won't push .env file to github
 -> created the route and tested its working -> using http://localhost:3000/api/user/test
 
 (PART-8)
-->creating signup api route
+->creating SIGNUP api route
 ->so that user can signup on our application
-
+-> get information like username,mail,password from client side 
+-> hash the password and save inside the database 
+-> routes created inside route folder but function written inside controllers folder
+-> download insomnia api 
+-> we don't want to save our password in database directly because if someone hacks database they get access to password or admin has access of password
+-> therefore hash it or encrypt for that in mern real estate folder download this package npm i bcryptjs
+-> controllers folders -> inside it 2 3 files 
