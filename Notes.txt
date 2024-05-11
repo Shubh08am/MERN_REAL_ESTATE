@@ -92,5 +92,14 @@ add .env file to .gitignore before commit this won't push .env file to github
 
 (PART-10) 
 ->Creating UI of SIGN-UP PAGE 
-->inside client->src->pages->signup.jsx go there and create 
+->inside client->src->pages->signup.jsx go there and create signup page UIs (styling)
+
+(PART-11) -> Complete Sign up page functionality 
+->Adding functionality to signup page using Onchange event listener and when submitting details like username , password and mail add it to database
+-> use onSubmit={handleSubmit} event listener in form tag 
+-> creating proxy of server -> go to vite.config.js and do it -> '/api' -> 'http://localhost:3000' -> whenever seeing /api replace by localhost3000 one
+-> handling different error and adding users to database 
+-> useNavigate to navigate from sign-up page to signin page when user created successfully [when they click on sign-up button] and added to database
+
+
 
