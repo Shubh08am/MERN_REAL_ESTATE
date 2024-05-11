@@ -155,4 +155,15 @@ export const signin = async (req,res,next)=>{
 ->if trying to signin with wrong mail -> user not found! message comes 
 ->if trying to signin with wrong password -> wrong credentials! message comes 
 
+(PART-14) 
+->Adding Redux ToolKit 
+-> Using Redux toolkit we will have global state instead of local state
+->instead of passing data in different components and pages we will store the data using redux toolkit like -> header info  , profile info etc 
+-> allows to access user data in different places than 
+-> download rules from https://redux-toolkit.js.org/tutorials/quick-start 
+-> download redux dev tools and see action & states accordingly than 
+
+
+
+
 
