@@ -235,3 +235,8 @@ export const google = async (req, res, next) => {
 -> if in sign-in page and user signout and we try to again go to user profile page we are directed to sign-in page again 
 -> i.e profile page is authenticated 
 
+
+(PART-18)
+->Complete Profile Page UI 
+->insider src -> pages -> profile.jsx -> created the UI -> http://localhost:5173/profile
+-> LIKE Title, profile image and a form (for username,mail,password) 
