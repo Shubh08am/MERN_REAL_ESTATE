@@ -240,3 +240,16 @@ export const google = async (req, res, next) => {
 ->Complete Profile Page UI 
 ->insider src -> pages -> profile.jsx -> created the UI -> http://localhost:5173/profile
 -> LIKE Title, profile image and a form (for username,mail,password) 
+
+(PART-19) 
+->complete image upload functionality
+-> change user image -> and add to firebase storage -> so that our file is stored there 
+-> go to profile.jsx -> use input type as "file" and add a reference to image 
+-> when clicking on profile picture we will accept only image. 
+-> creating firebase storage and do the set up 
+-> useEffect hook used 
+-> uploading image percentage sie like 5 10 20 30 ... 100 
+->handleFileUpload()-> takes snapshot of image and upload it , handles error , download url of avatar 
+-> tell the user whether image uploaded successfully if 100% or any kind of error found like not a image file or image > 2mb 
+-> if everything works fine on clicking profile we can update avatar and new photo shown 
+
