@@ -253,3 +253,27 @@ export const google = async (req, res, next) => {
 -> tell the user whether image uploaded successfully if 100% or any kind of error found like not a image file or image > 2mb 
 -> if everything works fine on clicking profile we can update avatar and new photo shown 
 
+
+(PART-20) 
+->Create update user API route
+-> in backend -> to update user there 
+-> go to api -> routes -> user.routes.js -> create update route 
+-> extra checking in updating -> like check if person is authenticated or not 
+-> i.e when we sign in the user we created token inside the cookie use that token to verify the users 
+-> if updating wrong user or not authenticated -> give error  
+-> inside utils folder -> create verifyUser.js -> install npm i cookie-parser inside mern real estate folder -> for cookies purpose 
+-> now verify using token in verifyUser.js user 
+-> go to controller -> go to userController.js -> write logic of updating && routes -> userRoute.js -> create update && verify route
+-> set method is used to check if data is being changed like user updated mail but not username so on else ignore the data 
+-> open insomnia -> send post request and see working of update route like -> localhost:3000/api/user/update/663f061957dad12d4dfd8190 
+-> where last no. 663f...90 is id of user who signin and it is being updated , this id is always unique 
+
+if error this message comes from insomnia 
+
+	"success": false,
+	"statusCode": 401,
+	"message": "You can only update your own account!"
+}
+
+
+
