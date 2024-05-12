@@ -171,9 +171,60 @@ export const signin = async (req,res,next)=>{
 -> to check open sign in page -> right click -> inspect -> go to redux and see in state
 ->go to application -> local storage -> current user information stored there 
 
+(PART-16)
+-> Add Google OAuth Functionality 
+-> inside sign up page -> continue with google option there 
+-> src folder -> components folder -> create OAuth.jsx 
+-> Add OAuth to Signin and Signup pages 
+-> we added continue with google inside form so if clicking on this button it submits signin/signup page to prevent -> inside OAuth.jsx add type='button'
+->go to firebase() -> create project and set up & install -> npm install firebase inside client folder
 
 
+-> continue with google -> on clicking a pop up windows come -> make sure to have 2 3 mail account added -> else if only 1 added pop up not shown 
+-> I added 3 account 
+-> when continue with google -> using account to continue -> it displayls in console many thing -> we need 3 crucial Information 
+-> 1. display name , 2. email , 3. photo url of mail -> than send this data to backend to create this user 
+-> In OAuth.jsx basically frontend of the google OAuth functionality is created -> now create backend ->go to api folder-> go to routes folder 
+-> go to auth.route.js -> create function insider controllers folder -> inside auth.controllers.js
+-> after continue with google -> we redirect to home page 
 
-
+export const google = async (req, res, next) => {
+   try {
+      //check if user existed or not -> if not create user -> else signin the user
+     const user = await User.findOne({ email: req.body.email });
+     //user exixts and authenticating them and signing them
+     if (user) {
+       const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
+       const { password: pass, ...rest } = user._doc;
+       res
+         .cookie('access_token', token, { httpOnly: true })
+         .status(200)
+         .json(rest); //sending back the user data 
+     } else { 
+      //create the user , in models -> user.model.js -> requires password: true -> create your own password
+       const generatedPassword =
+         Math.random().toString(36).slice(-8) +
+         Math.random().toString(36).slice(-8);
+       const hashedPassword = bcryptjs.hashSync(generatedPassword, 10);
+       const newUser = new User({
+         username:
+           req.body.name.split(' ').join('').toLowerCase() +
+           Math.random().toString(36).slice(-4),
+         email: req.body.email,
+         password: hashedPassword,
+         avatar: req.body.photo,
+       });
+       await newUser.save();
+       const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET);
+       const { password: pass, ...rest } = newUser._doc;
+       res
+         .cookie('access_token', token, { httpOnly: true })
+         .status(200)
+         .json(rest);
+     }
+   } catch (error) {
+     next(error);
+   }
+ };
 
 
