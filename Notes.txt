@@ -286,3 +286,12 @@ if error this message comes from insomnia
 -> here redux toolkit concept used 
 -> user updated successfully if no problem occurs else showing unauthorized error -> first continue with google and do the update to your account 
 
+(PART-22)
+-> Add Delete User Functionality
+-> create deleteUser Api route inside route-> userRoute.js 
+-> go and define route inside controller folder -> inside userController.js 
+-> go to insomnia and make request to delete and delete user account -> after that they won't be able to signin 
+-> similar to part-21 create reducers for delete
+-> after clicking on delete account user re-directed to sign-in page 
+-> after user deleted -> it is removed  from local storage and cookies both 
+
