@@ -276,4 +276,13 @@ if error this message comes from insomnia
 }
 
 
+(PART-21)
+->Complete Update User Functionality
+->Connect frontend with backend 
+->Add event listener for profile page forms 
+->and than connect to api 
+-> onchange(for mail & username update) and onsubmit(in form) event listener used 
+-> also go to redux folder -> userSlice.js -> add 3 more reducers for update user 
+-> here redux toolkit concept used 
+-> user updated successfully if no problem occurs else showing unauthorized error -> first continue with google and do the update to your account 
 
