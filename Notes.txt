@@ -291,7 +291,16 @@ if error this message comes from insomnia
 -> create deleteUser Api route inside route-> userRoute.js 
 -> go and define route inside controller folder -> inside userController.js 
 -> go to insomnia and make request to delete and delete user account -> after that they won't be able to signin 
--> similar to part-21 create reducers for delete
+-> similar to part-21 create reducers for delete in userSlice.js
 -> after clicking on delete account user re-directed to sign-in page 
 -> after user deleted -> it is removed  from local storage and cookies both 
+
+
+(PART-23)
+->Add Sign Out User Functionality
+-> create Sign Out Api route inside route-> auth.Route.js -> it will be a get Request 
+-> go and define route inside controller folder -> inside authController.js
+-> for sign out we just need to clear the cookie 
+-> go to frontend -> pages -> profile.jsx -> add onClick event listener to signout button
+-> similar to part-21 create reducers for signout in userSlice.js
 
