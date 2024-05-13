@@ -336,6 +336,19 @@ if error this message comes from insomnia
 (PART-25)
 -> complete create listing page UI
 -> further than create image upload functionality and create listing functionality 
--> responsiveness added to the ui 
+-> responsiveness added to the ui for mobile size screen and laptop size screen 
 -> add create listing link in profile.jsx
 -> add CreateListing.jsx file inside pages folder -> this is a private page -> shown to authenticated user only -> therefore add it to private route in app.jsx
+-> to make seo friendly create listing page using <main> tag instead of div as return type in CreateListing.jsx
+-> uses css for ui part 
+-> listing takes -> form for name,description,address and than check boxes and than input type and than image upload things 
+-> http://localhost:5173/create-listing
+
+
+(PART-26)
+-> complete upload listing images Functionality
+-> upload upto 6 images and handle all errors associated with it 
+-> also show the image after upload under the input 
+-> add onchange event listeners so that when we choose files( images ) they are set into some piece of states and stored 
+-> since uploading more than one image we use promise as it will have asynchronous behaviour and thus waiting for all image to get uploaded -> return a promise therefore
+-> user can see the image they uploaded also they can delete that images 
