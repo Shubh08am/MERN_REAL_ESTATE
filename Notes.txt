@@ -313,7 +313,7 @@ if error this message comes from insomnia
 -> go to route -> create listing.route.js file
 -> go to controller folder -> create listing.controller.js file and define route 
 -> creating listing schema inside models -> create listing.model.js 
--> go to insomnia and create a listing  with following details 
+-> go to insomnia and create a listing  with following details as a post request -> localhost:3000/api/listing/create
 
 {
 	"name": "test",
@@ -331,3 +331,11 @@ if error this message comes from insomnia
 	"userRef": "oeifheofhe8fhei9"
 }
 
+-> this will create a unique id for listing 
+
+(PART-25)
+-> complete create listing page UI
+-> further than create image upload functionality and create listing functionality 
+-> responsiveness added to the ui 
+-> add create listing link in profile.jsx
+-> add CreateListing.jsx file inside pages folder -> this is a private page -> shown to authenticated user only -> therefore add it to private route in app.jsx
