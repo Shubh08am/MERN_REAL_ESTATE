@@ -303,4 +303,31 @@ if error this message comes from insomnia
 -> for sign out we just need to clear the cookie 
 -> go to frontend -> pages -> profile.jsx -> add onClick event listener to signout button
 -> similar to part-21 create reducers for signout in userSlice.js
+-> after clicking on sign out account user re-directed to sign-in page
+
+
+(PART-24)
+->Add Create Listing API route
+-> create listing section -> work on api and also on ui of create listing
+-> add route to index.js ->  app.use('/api/listing', listingRouter);
+-> go to route -> create listing.route.js file
+-> go to controller folder -> create listing.controller.js file and define route 
+-> creating listing schema inside models -> create listing.model.js 
+-> go to insomnia and create a listing  with following details 
+
+{
+	"name": "test",
+	"description": "test",
+	"address": "test",
+	"regularPrice": 500,
+	"discountPrice": 500,
+	"bathrooms": 5,
+	"bedrooms": 5,
+	"furnished": true,
+	"parking": true,
+	"type": "rent",
+	"offer": true,
+	"imageUrls": ["dhfe" , "efhoehf"],
+	"userRef": "oeifheofhe8fhei9"
+}
 
