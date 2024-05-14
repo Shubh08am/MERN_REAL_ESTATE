@@ -373,3 +373,12 @@ if error this message comes from insomnia
 -> create a api route for the end point to get information 
 -> api folder -> route folder -> user.route.js  -> router.get('/listings/:id', verifyToken, getUserListings)
 -> go to insomnia and do api testing 
+
+(PART-29)
+-> complete show user listings functionality
+->  connect the client to backend and get the information of the user 
+-> create a show listing button if clicking on it -> it will show all the listings which can be edited and deleted
+
+(PART-30)
+-> complete delete user listing Functionality
+-> Working on delete functionality of PART-29
