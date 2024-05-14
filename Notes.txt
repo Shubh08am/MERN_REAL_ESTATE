@@ -382,3 +382,5 @@ if error this message comes from insomnia
 (PART-30)
 -> complete delete user listing Functionality
 -> Working on delete functionality of PART-29
+-> when we delete a listing it is also removed from the database 
+-> 
