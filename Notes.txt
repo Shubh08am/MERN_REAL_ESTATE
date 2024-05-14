@@ -361,4 +361,15 @@ if error this message comes from insomnia
 ->go to createListing.jsx and do 
 ->when ever we check any option its shown in formData as an object with type = rent (example) 
 -> handles all int,check box type value when setting form data in handleChange function which is basically and onChange event listener
-->
+-> fix all the errors like if no image dont create listing 
+->error (Discount price must be lower than regular price) ->       if (+formData.regularPrice < +formData.discountPrice) -> + use to convert from string to int 
+->Discount price shown only if clicking on offer else not shown 
+-> when listing created redirect user to listing page based on the user id listing page is created for redirecting
+-> first sign out before using -> than signin/continue with google -> go to create listing -> http://localhost:5173/listing/66436b2b794a290b7c885f46 
+
+(PART-28)
+-> Create get user listings API route
+-> this will basically show the listings we created in part-27 of a user 
+-> create a api route for the end point to get information 
+-> api folder -> route folder -> user.route.js  -> router.get('/listings/:id', verifyToken, getUserListings)
+-> go to insomnia and do api testing 
