@@ -352,3 +352,13 @@ if error this message comes from insomnia
 -> add onchange event listeners so that when we choose files( images ) they are set into some piece of states and stored 
 -> since uploading more than one image we use promise as it will have asynchronous behaviour and thus waiting for all image to get uploaded -> return a promise therefore
 -> user can see the image they uploaded also they can delete that images 
+-> how to show images to user -> it is stored in a state formData using the imageUrls get the url and that from the states show that url image 
+-> to delete image -> using onchange event listener and from state fromData we apply filter logic to find the index of the image to be deleted and delete that image 
+
+(PART-27)
+-> complete create listing page Functionality
+->submit all information from create listing to database
+->go to createListing.jsx and do 
+->when ever we check any option its shown in formData as an object with type = rent (example) 
+-> handles all int,check box type value when setting form data in handleChange function which is basically and onChange event listener
+->
