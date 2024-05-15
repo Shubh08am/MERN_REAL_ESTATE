@@ -394,3 +394,10 @@ if error this message comes from insomnia
 -> working on edit functionality of listings and updating the listings 
 ->first working on api route of it and than completing functionality
 -> create api route for update functionality -> go to listing.route.js -> than go to listing.controller.js and define the route 
+
+(PART-32)
+-> create update listing Functionality
+-> Adding ApI client side of edit to route 
+-> create UpdateListing.jsx inside pages folder inside client folder  -> same as createListing.jsx 
+-> UpdateListing.jsx page opens when we click on edit listing option in show listing part 
+->http://localhost:5173/update-listing/6643ae9c5ffd75754be0ffac -> user id also appears for that id update the listings 
