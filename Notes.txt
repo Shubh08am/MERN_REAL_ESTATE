@@ -383,4 +383,14 @@ if error this message comes from insomnia
 -> complete delete user listing Functionality
 -> Working on delete functionality of PART-29
 -> when we delete a listing it is also removed from the database 
--> 
+-> adding event listener to delete option -> which request from api route 
+-> create api route for delete functionality -> go to listing.route.js -> than go to listing.controller.js and define the route 
+-> integrate delete in client side section as well -> inside profile.jsx 
+-> creating listing here -> http://localhost:5173/create-listing 
+-> even if we refresh page after deleting listing and again show listing -> deleted listing not shown -> i.e deleted from database as well 
+
+(PART-31)
+-> create update listing API route
+-> working on edit functionality of listings and updating the listings 
+->first working on api route of it and than completing functionality
+-> create api route for update functionality -> go to listing.route.js -> than go to listing.controller.js and define the route 
