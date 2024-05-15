@@ -396,8 +396,16 @@ if error this message comes from insomnia
 -> create api route for update functionality -> go to listing.route.js -> than go to listing.controller.js and define the route 
 
 (PART-32)
--> create update listing Functionality
+-> complete update listing Functionality
 -> Adding ApI client side of edit to route 
 -> create UpdateListing.jsx inside pages folder inside client folder  -> same as createListing.jsx 
 -> UpdateListing.jsx page opens when we click on edit listing option in show listing part 
 ->http://localhost:5173/update-listing/6643ae9c5ffd75754be0ffac -> user id also appears for that id update the listings 
+-> based on the id we will create a api route for getting the listing 
+-> go to api folder -> route folder -> listing.route.js -> get the listing
+
+(PART-33)
+-> Add image slider to the listing page 
+-> if we click on the listing name after show listing it gets opened 
+-> create listing page inside pages folder which gets open on clicking on lisitings 
+-> intall swiper package so that image can be swipped 
