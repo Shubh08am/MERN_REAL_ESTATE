@@ -415,3 +415,19 @@ if error this message comes from insomnia
 -> Complete listing page 
 -> go inside pages -> upate listing.jsx -> when we click on show listing and than on listing name -> listing details appeared with image first and than the details
 -> this will show all the details of listing page like bed , bathrooms , cost , sell  or rent, parking etc with images and icons for details.
+
+(PART-35) 
+-> Add contact landlord functionality to the listing page
+-> free version of render -> if no traffic on website goes to sleep state -> if traffic active else takes time to wake 
+-> adding a contact landloard option to listing page if property is of rent and message to send to landloard which is basically mail 
+-> create authenticating conditions -> like other than owner of the property (like who created the listing) only sees the contact landloard option 
+-> when we click on contact landloard button we remove it and we want a piece of state contact to be active at that time done using onchange event listener 
+-> go to components folder and create a component name contact.jsx 
+-> we want to have information of landloard -> create a api route for fetching information of a user but for that we need to be authenticated as well 
+-> go to api folder - route -> user.Route.js -> router.get('/:id', verifyToken, getUser) ->  user.controller.js -> define getUser 
+-> go in contact.jsx and attach this api route created along with the frontend 
+-> in contact.jsx we create state like landlord and message to store information 
+-> but for seeing contact landlord option signin from other account but before that copy the link of listing from landlord -> than we can see contact landlord option 
+-> after clicking on send message mail opens with landloard mail and subject is regarding + listing name and body is content of message 
+
+
