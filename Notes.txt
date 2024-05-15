@@ -408,4 +408,10 @@ if error this message comes from insomnia
 -> Add image slider to the listing page 
 -> if we click on the listing name after show listing it gets opened 
 -> create listing page inside pages folder which gets open on clicking on lisitings 
--> intall swiper package so that image can be swipped 
+-> install swiper package so that image can be swipped inside client folder 
+-> if we have more than one image in our listing than we can slide it right side i.e swipe 
+
+(PART-34) 
+-> Complete listing page 
+-> go inside pages -> upate listing.jsx -> when we click on show listing and than on listing name -> listing details appeared with image first and than the details
+-> this will show all the details of listing page like bed , bathrooms , cost , sell  or rent, parking etc with images and icons for details.
