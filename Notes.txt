@@ -565,3 +565,10 @@ npm install -D @tailwindcss/line-clamp
 
 (PART-44)
 ->Deploy to Render
+-> do changes in package.json and index.js (inside api folder)
+-> in package.json add a script to run in a client side
+-> "build": "npm install && npm install --prefix client && npm run build --prefix client"
+first build the backend and than install the client side and than build the client side 
+-> during npm run build -> dist folder created
+-> than go to index.js -> create a dynamic path name so that our code works anywhere 
+->go to render now and deploy
