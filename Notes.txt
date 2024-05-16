@@ -502,3 +502,27 @@ and all things like bed,bathroom,cost etc and based on checks than the search re
     }
   };
 
+(PART-37) 
+-> complete header search form functionality
+-> open header.jsx -> inside src -> components 
+-> when we search for something in search bar and press enter or click search icon -> url of website changes with that searchTerm 
+-> keep a state for searchTerm 
+->like if we search for flat in search bar, url modified to http://localhost:5173/search?searchTerm=flat 
+-> if in url changing flat to other thing search bar also modified -> done using useEffect 
+
+useEffect(() => {
+      const urlParams = new URLSearchParams(location.search);
+      const searchTermFromUrl = urlParams.get('searchTerm');
+      if (searchTermFromUrl) {
+        setSearchTerm(searchTermFromUrl);
+      }
+    }, [location.search]);
+
+(PART-38)
+-> Create search page UI
+-> create Search.jsx inside pages folder & add the route to app.jsx 
+-> search page has 2 part -> 1st part (form) all listing details like cost,bed,baths etc and 2nd part lisitng reults according to searchTerm 
+-> this will create only the ui in the next part -> we will get all the information from the form and add the ability to search and change the url as well 
+
+
+-> 
