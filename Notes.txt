@@ -558,3 +558,10 @@ npm install -D @tailwindcss/line-clamp
 ->  rent section loaded after offer section gets loaded 
 -> sale section loaded after rent section gets loaded 
 -> show more offers/rent options also added in every section 
+
+(PART-43)
+->complete about page 
+-> about.jsx inside page folder
+
+(PART-44)
+->Deploy to Render
