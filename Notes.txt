@@ -544,3 +544,9 @@ from url also we can change things it get reflected to search page as well
 npm install -D @tailwindcss/line-clamp
 -> in listing result we show only 9 listings if more than that use a show more button in (next part) 
 
+
+(PART-41)
+-> add show more listings funtionality
+-> Create setShowMore and set it true if we have more than or equal to 9 listings 
+->  use onclick event listener for show more button -> onShowMoreClick this function define it (done inside search.jsx) 
+
