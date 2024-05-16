@@ -431,7 +431,7 @@ if error this message comes from insomnia
 -> after clicking on send message mail opens with landloard mail and subject is regarding + listing name and body is content of message 
 
 (PART-36) 
-->create search api route
+-> create search api route
 -> MOST DIFFICULT PART OF THE PROJECT -> IF ASK FOR DIFFICULTY FACED SAY THIS -> ******** REMEMBER *********
 -> add the api route for search functionality -> able to create some conditions for search etc 
 -> go to api folder -> listing.route.js and than to listing.controller.js
@@ -441,9 +441,8 @@ and all things like bed,bathroom,cost etc and based on checks than the search re
 -> in insomnia (inside listing -> search ) -> localhost:3000/api/listing/get -> get request to get listings 
 -> for searching -> localhost:3000/api/listing/get?searchTerm=flat -> return all the name having flat 
 -> for limiting -> localhost:3000/api/listing/get?searchTerm=flat&limit=2 
-
-
-
+-> in listing.controller.js :-
+ 
   export const getListings = async (req, res, next) => {
     try {
       //if limit there take it else use 9 
