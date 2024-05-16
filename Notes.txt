@@ -550,3 +550,11 @@ npm install -D @tailwindcss/line-clamp
 -> Create setShowMore and set it true if we have more than or equal to 9 listings 
 ->  use onclick event listener for show more button -> onShowMoreClick this function define it (done inside search.jsx) 
 
+(PART-42)
+-> complete home page
+-> Landing page and showing listing carts and image slider 
+-> 3 section created in home page for offer , rent and than for sale 
+-> we limit to 4 listing for each section 
+->  rent section loaded after offer section gets loaded 
+-> sale section loaded after rent section gets loaded 
+-> show more offers/rent options also added in every section 
