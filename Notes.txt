@@ -524,5 +524,11 @@ useEffect(() => {
 -> search page has 2 part -> 1st part (form) all listing details like cost,bed,baths etc and 2nd part lisitng reults according to searchTerm 
 -> this will create only the ui in the next part -> we will get all the information from the form and add the ability to search and change the url as well 
 
-
--> 
+(PART-39)
+-> add onChange and onSubmit functionality to the search page
+-> create a state   const [sidebardata, setSidebardata] , which tracks all the listing details and will display all of them in search url when clicking on search 
+-> using different function for onchange & onSubmit event listener for handling changes , submiting the changes etc 
+-> any time sidebardata changes if we search for a listing than using useEffect search url is modified 
+-> if searching for domething in right side in search icon it is also modified in left side search Term using useEffect 
+-> http://localhost:5173/search?searchTerm=flat&type=sale&parking=true&furnished=true&offer=true&sort=created_at&order=desc 
+from url also we can change things it get reflected to search page as well 
