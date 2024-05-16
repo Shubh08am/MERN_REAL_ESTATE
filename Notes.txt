@@ -532,3 +532,15 @@ useEffect(() => {
 -> if searching for domething in right side in search icon it is also modified in left side search Term using useEffect 
 -> http://localhost:5173/search?searchTerm=flat&type=sale&parking=true&furnished=true&offer=true&sort=created_at&order=desc 
 from url also we can change things it get reflected to search page as well 
+
+(PART-40) 
+-> Create the listing item component and show listings
+-> show all the information according to our search in listing results i.e some carts created to show them 
+-> carts are basically components which show all the information of listing like price , name , description etc 
+-> create ListingItem.jsx inside components folder inside src folder 
+-> do changes in search.jsx to show the listing results if listing found for the corresponding searchTerm else show no listing found 
+-> get all the listing inside ListingItem.jsx as inputs 
+-> install tailwind css line clamp it truncates description to like 2 lines than followed by ..
+npm install -D @tailwindcss/line-clamp
+-> in listing result we show only 9 listings if more than that use a show more button in (next part) 
+
